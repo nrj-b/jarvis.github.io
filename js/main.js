@@ -2,7 +2,7 @@ let mic = document.getElementById("mic");
 let chatareamain = document.querySelector('.chatarea-main');
 let chatareaouter = document.querySelector('.chatarea-outer');
 
-let intro = ["Hello, I am Jarvis   Assistant of Neeraj Bhardwaj", "Hi, I am Jarvis   Assistant of Neeraj Bhardwaj", "Hello, My name is Jarvis and I am assistant of Neeraj Bhardwaj"];
+let intro = ["Hello, I am Jarvis and I am Assistant of Neeraj Bhardwaj", "Hi, I am Jarvis and I am  Assistant of Neeraj Bhardwaj", "Hello, My name is Jarvis and I am assistant of Neeraj Bhardwaj"];
 let help = ["How may i assist you?","How can i help you?","What i can do for you?"];
 let greetings = ["i am good you little piece of love", "i am fine, what about you", "don't want to talk", "i am good"];
 let hobbies = ["i love to talk with humans", "i like to make friends like you", "i like cooking"];
@@ -54,7 +54,7 @@ function chatbotvoice(message){
         let finalresult = thank[Math.floor(Math.random() * thank.length)];
         speech.text = finalresult;
     }
-    if(message.includes('talk to you' || 'talk')){
+    if(message.includes('talk to you later' || 'bye bro')){
         let finalresult = closing[Math.floor(Math.random() * closing.length)];
         speech.text = finalresult;
     }
